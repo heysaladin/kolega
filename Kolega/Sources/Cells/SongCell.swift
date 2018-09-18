@@ -1,6 +1,6 @@
 //
 //  SongCell.swift
-//  CVVM
+//  Kolega
 //
 //  Created by Tibor Bödecs on 2018. 04. 13..
 //  Copyright © 2018. Tibor Bödecs. All rights reserved.

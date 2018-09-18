@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CVVM
+//  Kolega
 //
 //  Created by Tibor Bödecs on 2018. 04. 12..
 //  Copyright © 2018. Tibor Bödecs. All rights reserved.
@@ -13,7 +13,7 @@ class ViewController: CollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "CVVM"
+        self.title = "Kolega"
     
         let albums = [
             Album(artirst: "August Burns Red", name: "Constellations", image: "01"),
@@ -29,7 +29,7 @@ class ViewController: CollectionViewController {
         let grid = Grid(columns: 4, margin: UIEdgeInsets(all: 8))
         
         let artistSection = CollectionViewSection(items: [self.createHorizontal()])
-        artistSection.header = HeaderViewModel("Top metal artists")
+        artistSection.header = HeaderViewModel("Top Contact")
         
         let items = albums.map { album -> AlbumViewModel in
             let viewModel = AlbumViewModel(album)
@@ -37,7 +37,7 @@ class ViewController: CollectionViewController {
             return viewModel
         }
         let albumSection = CollectionViewSection(items: items)
-        albumSection.header = HeaderViewModel("Top metal albums")
+        albumSection.header = HeaderViewModel("Top Contact Group")
         
         self.source  = CollectionViewSource(grid: grid, sections: [artistSection, albumSection])
         self.collectionView.reloadData()

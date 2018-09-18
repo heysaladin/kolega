@@ -1,6 +1,6 @@
 //
 //  AlbumViewModel.swift
-//  CVVM
+//  Kolega
 //
 //  Created by Tibor Bödecs on 2018. 04. 12..
 //  Copyright © 2018. Tibor Bödecs. All rights reserved.
